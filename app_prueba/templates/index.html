@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Cliente ::</title>
+</head>
+<body>
+    <h1>Index Cliente ::</h1>
+    <form method="POST" action="agregar">
+    {% csrf_token %}
+        <label for="">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+        <br>
+        <label for="apellido">apellido:</label>
+        <input type="text" id="apellido" name="apellido" placeholder="apellido">
+        <br>
+        <label for="rut">rut:</label>
+        <input type="text" id="rut" name="rut" placeholder="rut">
+        <br>
+        <label for="dv">Dv:</label>
+        <input type="text" id="dv" name="dv" placeholder="dv">
+        <br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="email">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="password">
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
